@@ -22,7 +22,8 @@
 	"scripts": {
 		"test": "tape test/*.js",
 		"configure": "node-gyp configure",
-		"build": "node-gyp rebuild"
+		"build": "node-gyp rebuild",
+		"postinstall": "node-gyp rebuild"
 	},
 	"dependencies": {
 		"nanoresource": "^1.3.0",
