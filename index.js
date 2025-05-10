@@ -2,8 +2,9 @@ import { exec } from "node:child_process";
 import { stat as _stat, existsSync } from "node:fs";
 import { arch as _arch, platform as _platform } from "node:os";
 import { basename, join, resolve } from "node:path";
+import binding from "bindings";
 import Nanoresource from "nanoresource";
-const binding = require("bindings")("fuse.node");
+("fuse.node");
 
 const platform = _platform();
 const arch = _arch();
