@@ -1,23 +1,26 @@
-var os = require("os");
-var path = require("path");
-var fs = require("fs");
+const os = require("node:os");
+const path = require("node:path");
+const fs = require("node:fs");
 
 function create(opts = {}) {
-    if (os.platform() === "win32" && opts.doNotCreate == null) {
-        opts.doNotCreate = true;
-    }
+	if (os.platform() === "win32" && opts.doNotCreate == null) {
+		opts.doNotCreate = true;
+	}
 
-    var mnt = path.join(os.tmpdir(), "fuse-bindings-" + process.pid + "-" + Date.now());
+	const mnt = path.join(
+		os.tmpdir(),
+		`fuse-bindings-${process.pid}-${Date.now()}`,
+	);
 
-    if (!opts.doNotCreate) {
-        try {
-            fs.mkdirSync(mnt);
-        } catch (err) {
-            // do nothing
-        }
-    }
+	if (!opts.doNotCreate) {
+		try {
+			fs.mkdirSync(mnt);
+		} catch (err) {
+			// do nothing
+		}
+	}
 
-    return mnt;
+	return mnt;
 }
 
 module.exports = create;

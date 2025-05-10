@@ -1,52 +1,50 @@
 {
-    "name": "@gcas/fuse",
-    "version": "2.4.2",
-    "description": "Fuse API bindings for NodeJS that aim to be feature complete and cross-platform (Linux, Windows, MacOSX).",
-    "author": "Valeriu Paloș (@vpalos)",
-    "contributors": [
-        "Mathias Buus (@mafintosh)"
-    ],
-    "license": "MIT",
-    "homepage": "https://github.com/gcasro/fuse",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/gcasro/fuse.git"
-    },
-    "bugs": {
-        "url": "https://github.com/gcasro/fuse/issues"
-    },
-    "main": "index.js",
-    "types": "index.d.ts",
-    "gypfile": true,
-    "bin": {
-        "fuse": "./bin.js"
-    },
-    "scripts": {
-        "test": "tape test/*.js",
-        "configure": "node-gyp configure",
-        "build": "node-gyp rebuild"
-    },
-    "dependencies": {
-        "nanoresource": "^1.3.0",
-        "napi-macros": "^2.0.0"
-    },
-    "devDependencies": {
-        "@types/node": "^18.11.18",
-        "bindings": "^1.5.0",
-        "concat-stream": "^2.0.0",
-        "prettier": "^3.0.3",
-        "standard": "^13.1.0",
-        "tape": "^4.12.0"
-    },
-    "engines": {
-        "node": ">=18.15.0"
-    },
-    "prettier": {
-        "singleQuote": false,
-        "semi": true,
-        "useTabs": false,
-        "tabWidth": 4,
-        "printWidth": 140,
-        "trailingComma": "es5"
-    }
+	"name": "@gcas/fuse",
+	"version": "2.4.2",
+	"description": "Fuse API bindings for NodeJS that aim to be feature complete and cross-platform (Linux, Windows, MacOSX).",
+	"author": "Valeriu Paloș (@vpalos)",
+	"contributors": ["Mathias Buus (@mafintosh)"],
+	"license": "MIT",
+	"homepage": "https://github.com/gcasro/fuse",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gcasro/fuse.git"
+	},
+	"bugs": {
+		"url": "https://github.com/gcasro/fuse/issues"
+	},
+	"main": "index.js",
+	"types": "index.d.ts",
+	"gypfile": true,
+	"bin": {
+		"fuse": "./bin.js"
+	},
+	"scripts": {
+		"test": "tape test/*.js",
+		"configure": "node-gyp configure",
+		"build": "node-gyp rebuild"
+	},
+	"dependencies": {
+		"nanoresource": "^1.3.0",
+		"napi-macros": "^2.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.11.18",
+		"bindings": "^1.5.0",
+		"concat-stream": "^2.0.0",
+		"prettier": "^3.0.3",
+		"standard": "^13.1.0",
+		"tape": "^4.12.0"
+	},
+	"engines": {
+		"node": ">=18.15.0"
+	},
+	"prettier": {
+		"singleQuote": false,
+		"semi": true,
+		"useTabs": false,
+		"tabWidth": 4,
+		"printWidth": 140,
+		"trailingComma": "es5"
+	}
 }
